@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+:root{
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-texto: 'Kaushan Script', cursive;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100px;
+    background-color: darkgray;
+    font-family: var(--fonte-titulo);
+}
+header{
+    background-color: black;
+    color: white;
+    text-align: center; 
+    font-family: 'Kaushan Script', cursive;  
+}
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+}
+header > p{
+    padding-bottom: 50px;
+}
+header > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+header > p > a:hover{
+    text-decoration: underline;
+    color: red;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-size: 5vw;
+    font-family: var(--fonte-texto);
+}
+section > p{
+    padding-bottom: 2em;
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(41, 39, 39);
+    color: white;
+    box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.534);
+   
+}
+section.imagem > p{
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 400px;
+    padding: 5px;
+}
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte-padrao);
+}
+footer > p > a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+    color: red;
+}
